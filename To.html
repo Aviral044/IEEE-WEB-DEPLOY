@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ALCHEMAX</title>
+    <link rel="icon" href=""
+    <!--materials icons CDN-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--CSS file-->
+    <link rel="stylesheet" href="../public/css/To.css">
+    <!--javascript file-->
+    <script rel="text/javascript" src="../public/js/functionality.js"></script>
+</head>
+<body  onload="setVal()">
+    <div class="wrapper">
+        <!--Sidebar container-->
+        <div id="sidenav" class="sidenav">
+            <a class="closebtn" onclick="closeNav()"><i class="material-icons md-48">close</i></a>
+            <div class="sidemenu">
+                <a href="index.html"><i class="material-icons"></i>HOME</a>
+                <a class="active" href="#"><i class="material-icons"></i>BOOK</a>
+                <a href="#"><i class="material-icons"></i>OFFERS</a>
+                <a href="faq.html"><i class="material-icons"></i>FAQs</a>
+            </div>
+        </div>
+        <!-- Page Content Holder -->
+        <div id="content">
+            <!--topnavbar-->
+            <div id="topnav" class="topnav">
+                <div class="ham-menu">
+                    <a class="ham" onclick="openNav()"><i class="material-icons md-48">menu</i></a>
+                </div>
+                <div class="comp-logo">
+                    <img src="../public/resources/images/logo.png">
+                </div>
+                <div class="topnav-right">
+                    <a class="active" href="#">BOOK</a>
+                    <a href="#">OFFERS</a>
+                    <a href="faq.html">FAQs</a>
+
+                </div>
+            </div>
+            <div class="to-form">
+                <p id="texts">From</p>
+                <form>
+                    <select class="from-origin">
+                        <option id="from-settlement-name" value=""></option>
+                    </select>
+                </form>
+                <p id="texts" class="to">To:</p>
+                <form>
+                    <select class="to-origin" id="to-form-link">
+                        <option value="" disabled selected>TO</option>
+                        <option value="mars">Mars</option>
+                        <option value="earth">Earth</option>
+                        <option value="moon">Moon</option>
+                        <option value="ufa">United Federation Assembly</option>
+                    </select>
+                </form>
+                <div class="submit-button">
+                    <a href="" id="to-btn" onclick="toLinker()"><i class="material-icons md-72 md-light">navigate_next</i></a>
+                </div>
+           </div>
+    </div>
+</body>
+</html>

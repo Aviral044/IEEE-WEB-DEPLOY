@@ -1,0 +1,266 @@
+/* ---------------------------------------------------
+    CSS CODE
+----------------------------------------------------- */
+body {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    font-family: Arial;
+    color: #fff;
+    background-image: url('../resources/images/1596841005652.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100vh;
+    background-color: #202124;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+.wrapper {
+  margin-right: 0;
+  padding-right: 0;
+  }
+
+
+/* ---------------------------------------------------
+    SIDENAV
+----------------------------------------------------- */
+/*sidenav properties*/
+
+.sidenav{
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 15px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background: #606368;
+    opacity: 0.85;
+    
+}
+
+/*sidenav links*/
+.sidemenu{
+    margin-top: 100px;
+}
+
+
+.sidemenu a {
+    padding: 15px 10px 15px 60px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidemenu a:hover:not(.active) {
+    background-color: #3C4042;
+    opacity: 0.7;
+  }
+
+/* Active/current link */
+.sidemenu a.active {
+    background-color: #3C4042;
+    opacity: 0.7;
+  }
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+.closebtn{
+  cursor: pointer;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+/* ---------------------------------------------------
+    TOPNAV
+----------------------------------------------------- */
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-72 { font-size: 72px; }
+
+.comp-logo img{
+    float: left;
+    height:85px;
+    width: auto;
+    padding: 1px 1px 1px 2px;
+    background-color: black;
+}
+
+.ham-menu{
+    float: left;
+    padding:5px ;
+    cursor: pointer;
+}
+
+.topnav {
+    background: #3C4042;
+    opacity: 0.7;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    height: 60px;
+    display: block;
+}
+
+.topnav-right{
+    float: right;
+    padding-top: 19px;
+    height: 60px;
+}
+
+.topnav-right a{
+    color: #fff;
+    padding: 19px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .topnav-right a:hover:not(.active) {
+    background-color: #000;
+    opacity: 0.7;
+    color: #fff;
+  }
+  
+  .topnav-right a.active {
+    background-color: #0092DB ;
+    opacity: 0.7;
+    color: #fff;
+  }
+
+/* ---------------------------------------------------
+    BODY CONTENT
+----------------------------------------------------- */
+
+  .form {
+    position: absolute;
+    width: 500px;
+    height: 476px;
+    left: 108px;
+    top: 161px;
+    background: #3C4042;
+    opacity: 0.7;
+    border-radius: 10px;
+
+  }
+
+  .form p{
+      padding-left: 34px;
+      padding-top: 85px;
+      font-size: 30px;
+  }
+
+.main-holder{
+    display: inline;
+    align-self: center;
+}
+
+
+.from-origin{
+    margin-left: 34px;
+    margin-top: 40px;
+    position: absolute;
+    width: 309px;
+    height: 40px; 
+    background: #606368;
+    opacity: 0.5;
+    color:#fff;
+    font-size: 20px;
+    
+       
+}
+
+.type{
+    float: right;
+    margin-top: 10%;
+    margin-right: 25%;
+    margin-left: 50%;
+    display: block;
+}
+
+.type p{
+  font-size: 50px;
+}
+
+
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: none;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .submit-button{
+      bottom: 0px;
+      right: 0px ;
+      position: absolute;
+
+  }
+
+  .material-icons.md-light { color:rgb(164,166,169,0.7); }

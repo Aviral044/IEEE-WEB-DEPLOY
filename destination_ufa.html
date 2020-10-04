@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ALCHEMAX</title>
+    <!--materials icons CDN-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--CSS file-->
+    <link rel="stylesheet" href="../public/css/destination.css">
+    <!--javascript file-->
+    <script rel="text/javascript" src="../public/js/functionality.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!--Sidebar container-->
+        <div id="sidenav" class="sidenav">
+            <a class="closebtn" onclick="closeNav()"><i class="material-icons md-48">close</i></a>
+            <div class="sidemenu">
+                <a href="index.html"><i class="material-icons"></i>HOME</a>
+                <a class="active" href="#"><i class="material-icons"></i>BOOK</a>
+                <a href="#"><i class="material-icons"></i>OFFERS</a>
+                <a href="faq.html"><i class="material-icons"></i>FAQs</a>
+            </div>
+        </div>
+        <!-- Page Content Holder -->
+        <div id="content">
+            <!--topnavbar-->
+            <div id="topnav" class="topnav">
+                <div class="ham-menu">
+                    <a class="ham" onclick="openNav()"><i class="material-icons md-48">menu</i></a>
+                </div>
+                <div class="comp-logo">
+                    <img src="../public/resources/images/logo.png">
+                </div>
+                <div class="topnav-right">
+                    <a class="active" href="#">BOOK</a>
+                    <a href="#">OFFERS</a>
+                    <a href="faq.html">FAQs</a>
+                </div>
+            </div>
+            <div class="content-container">
+                <div class="form-left">
+                    <div class="from-form">
+                        <p>DESTINATION</p>
+                        <select class="from-value">
+                            <option value="">UCA</option>
+                        </select>
+                        <br>
+                        <select class="mars-settlement">
+                            <option value="" disabled selected>Select a settlement</option>
+                            <option value="Quadrant 1">Quadrant 1</option>
+                            <option value="Quadrant 2">Quadrant 2</option>
+                            <option value="Quadrant 3">Quadrant 3</option>
+                            <option value="Quadrant 4">Quadrant 4</option>
+                        </select>
+                        <div class="submit-button">
+                            <a href= "date.html" id="to-link" onclick="setDest()"><i class="material-icons md-72 md-light">navigate_next</i></a>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <p>General Guidelines:</p>
+                        <p>Keep in mind that you carry a Grade 5 permit before trying to enter the USS</p>
+                    </div>
+                </div>
+                <div class="planet-image">
+                    <img src="../public/resources/images/uca.png" width="100%" height="auto" >
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

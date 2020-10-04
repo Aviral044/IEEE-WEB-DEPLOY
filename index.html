@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ALCHEMAX</title>
+    <!--materials icons CDN-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--CSS file-->
+    <link rel="stylesheet" href="../public/css/index.css">
+    <!--javascript file-->
+    <script rel="text/javascript" src="../public/js/functionality.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!--Sidebar container-->
+        <div id="sidenav" class="sidenav">
+            <a class="closebtn" onclick="closeNav()"><i class="material-icons md-48">close</i></a>
+            <div class="sidemenu">
+                <a href="#" class="active"><i class="material-icons"></i>HOME</a>
+                <a href="from.html"><i class="material-icons"></i>BOOK</a>
+                <a href="#"><i class="material-icons"></i>OFFERS</a>
+                <a href="faq.html"><i class="material-icons"></i>FAQs</a>
+            </div>
+        </div>
+        <!-- Page Content Holder -->
+        <div id="content">
+            <!--topnavbar-->
+            <div id="topnav" class="topnav">
+                <div class="ham-menu">
+                    <a class="ham" onclick="openNav()"><i class="material-icons md-48">menu</i></a>
+                </div>
+                <div class="comp-logo">
+                    <img src="../public/resources/images/logo.png">
+                </div>
+                <div class="topnav-right">
+                    <a href="from.html">BOOK</a>
+                    <a href="#">OFFERS</a>
+                    <a href="faq.html">FAQs</a>
+                </div>
+            </div>
+            <div class="main-holder">
+                <div class="form">
+                    <p>Book your spacecraft ticket</p>
+                    <form>
+                        <select class="from-origin" id="from-first-form">
+                            <option value="" disabled selected>FROM</option>
+                            <option value="mars">Mars</option>
+                            <option value="earth">Earth</option>
+                            <option value="moon">Moon</option>
+                            <option value="ufa">United Federation Assembly</option>
+                        </select>
+                    </form>
+                    <div class="submit-button">
+                        <a href="" id="firstlink" onclick="fromLinker()"><i class="material-icons md-72 md-light">navigate_next</i></a>
+                    </div>
+                </div>
+                <div class="type">
+                    <p><span
+                        class="txt-rotate"
+                        data-period="2000"
+                        data-rotate='[ "WE ARE ALCHEMAX", "ALCHEMAX WARP", "COMFORT","RELIABILITY","SAFETY","AT WARP SPEED"]'></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

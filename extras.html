@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ALCHEMAX</title>
+    <!--materials icons CDN-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--CSS file-->
+    <link rel="stylesheet" href="../public/css/extras.css">
+    <!--javascript file-->
+    <script rel="text/javascript" src="../public/js/functionality.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!--Sidebar container-->
+        <div id="sidenav" class="sidenav">
+            <a class="closebtn" onclick="closeNav()"><i class="material-icons md-48">close</i></a>
+            <div class="sidemenu">
+                <a href="index.html" ><i class="material-icons"></i>HOME</a>
+                <a href="from.html"><i class="material-icons"></i>BOOK</a>
+                <a href="#"><i class="material-icons"></i>OFFERS</a>
+                <a href="#" class="active"><i class="material-icons"></i>FAQs</a>
+            </div>
+        </div>
+        <!-- Page Content Holder -->
+        <div id="content">
+            <!--topnavbar-->
+            <div id="topnav" class="topnav">
+                <div class="ham-menu">
+                    <a class="ham" onclick="openNav()"><i class="material-icons md-48">menu</i></a>
+                </div>
+                <div class="comp-logo">
+                    <img src="../public/resources/images/logo.png">
+                </div>
+                <div class="topnav-right">
+                    <a href="from.html">BOOK</a>
+                    <a href="#">OFFERS</a>
+                    <a class="active" href="#">FAQs</a>
+                </div>
+            </div>
+            <div class="extras-container">
+                <h2>Extras</h2>
+                <p>FOOD</p>
+                <form>
+                    <select class="from-origin" id="from-first-form">
+                        <option value="0">None</option>
+                        <option value="1">Steak- in a tube</option>
+                        <option value="1">Steak- dehydrated</option>
+                        <option value="1">Pasta Italiano-in a tube</option>
+                        <option value="1">Pasta Italiano-dehydrated</option>
+                        <option value="1">Chicken Barbeque-in a tube</option>
+                        <option value="1">Chicken Barbeque-dehydrated</option>
+                        <option value="1">Vegan Barbeque-in a tube</option>
+                        <option value="1">Vegan Barbeque-dehydrated</option>
+                    </select>
+                </form>
+                <p id="1">For the first time ever Alchemax brings you the finest cuisine prepared by chefs from the biggest restaurant chain ALA-MAX. 
+                    All the ingredients are supplied by Alchemax BioFarms.
+                    With Alchemax’s patented Taste-MAXX technique you can enjoy it dehydrated or in a tube with no loss in taste. 
+                </p>
+                <ul>
+                    <li id="item"><label class="container">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>Hypersleep
+                      </label>
+                      
+                      </li>
+                    <li id="item"><label class="container">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>Oxygen-100
+                      </label></li>
+                </ul>
+                <div class="conditions">
+                    <p>General Guidelines:</p>
+                    <p>1. All passengers have to bring their own spacesuits.<br>
+                        2. Any passengers with motion sickness need to carry a prescribed medicine as the spymptoms get worse in Warp Drive.<br>
+                        3. Children below 8 years of age should be given XT-2 Drug before the flight. These will cost extra if you choose to purchase them on board.</p>
+                </div>
+                <div class="submit-button">
+                    <a href= "seat.html" id="to-link" onclick=""><i class="material-icons md-72 md-light">navigate_next</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

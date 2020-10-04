@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ALCHEMAX</title>
+    <!--materials icons CDN-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--CSS file-->
+    <link rel="stylesheet" href="../public/css/checkout.css">
+    <!--javascript file-->
+    <script rel="text/javascript" src="../public/js/functionality.js"></script>
+</head>
+<body onload="setVal()">
+    <div class="wrapper">
+        <!--Sidebar container-->
+        <div id="sidenav" class="sidenav">
+            <a class="closebtn" onclick="closeNav()"><i class="material-icons md-48">close</i></a>
+            <div class="sidemenu">
+                <a href="index.html" ><i class="material-icons"></i>HOME</a>
+                <a href="from.html"><i class="material-icons"></i>BOOK</a>
+                <a href="#"><i class="material-icons"></i>OFFERS</a>
+                <a href="#" class="active"><i class="material-icons"></i>FAQs</a>
+            </div>
+        </div>
+        <!-- Page Content Holder -->
+        <div id="content">
+            <!--topnavbar-->
+            <div id="topnav" class="topnav">
+                <div class="ham-menu">
+                    <a class="ham" onclick="openNav()"><i class="material-icons md-48">menu</i></a>
+                </div>
+                <div class="comp-logo">
+                    <img src="../public/resources/images/logo.png">
+                </div>
+                <div class="topnav-right">
+                    <a href="from.html">BOOK</a>
+                    <a href="#">OFFERS</a>
+                    <a class="active" href="#">FAQs</a>
+                </div>
+            </div>
+            <div class="seat-container">
+                <div class="board">
+                    <ul class="left">
+                        <li><span id="setplanet"> Moon</span><span id="setfrom">Settlement 1</span></li>
+                        <lI>Date: 29/5/2099</lI>
+                        <li>Bronze Class</li>
+                    </ul>
+                    <ul class="right">
+                        <li>Mars Settlement 2</li>
+                        <li>Time: 14:00 hrs</li>
+                        <li>2</li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <p>Extras</p>
+                    <div class="extras-box">
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <p>Total:</p>
+                    <p>Enter Your Universal Z-pin to check out:<span></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
